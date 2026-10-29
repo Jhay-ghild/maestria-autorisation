@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MaestrIA</title>
+<!-- Page publique demandée par Google pour la connexion Google Tasks et Gmail (aucune donnée, aucun secret). -->
+<style>
+  :root {
+    --bg: #F5F6F8; --card: #FFFFFF; --text: #111827; --muted: #4B5563; --border: #E2E5EA;
+    --accent: #2F5BEA; --on-accent: #FFFFFF; --danger: #B91C1C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111318; --card: #1B1E25; --text: #F3F4F6; --muted: #A7ADB8; --border: #2C313B;
+            --accent: #5B7FFF; --on-accent: #0B1020; --danger: #F87171; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; padding: 16px;
+         background: var(--bg); color: var(--text); font: 16px/1.5 Inter, -apple-system, system-ui, sans-serif; }
+  main { width: 100%; max-width: 640px; margin: 24px auto; background: var(--card); border: 1px solid var(--border);
+         border-radius: 16px; padding: 28px 24px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p { margin: 8px 0; color: var(--muted); }
+  label { display: block; font-size: 14px; color: var(--muted); margin: 16px 0 6px; }
+  input { width: 100%; min-height: 44px; padding: 10px 12px; font: inherit; color: var(--text);
+          background: var(--bg); border: 1px solid var(--border); border-radius: 10px; }
+  button { min-height: 44px; padding: 10px 16px; font: inherit; font-weight: 600; border-radius: 10px;
+           border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  button:disabled { opacity: 0.5; cursor: default; }
+  .actions { display: flex; gap: 8px; margin-top: 20px; }
+  .actions button { flex: 1; }
+  ul { padding-left: 20px; color: var(--muted); }
+  .error { color: var(--danger); font-size: 14px; }
+  [hidden] { display: none !important; }
+  h2 { font-size: 17px; margin: 22px 0 4px; }
+  a { color: var(--accent); }
+  li { margin: 4px 0; }
+  .en { font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MaestrIA</h1>
+  <p>MaestrIA est une application de tâches personnelle, réservée à son auteur. Elle n'est pas proposée au public et on ne peut pas s'y inscrire.</p>
+  <h2>Connexion à Google</h2>
+  <p>L'auteur peut relier son propre compte Google pour :</p>
+  <ul>
+    <li>synchroniser ses tâches Google Tasks (titre, date, notes, tâche terminée) ;</li>
+    <li>transformer en tâches les e-mails Gmail auxquels il a lui-même donné le libellé « À traiter ».</li>
+  </ul>
+  <p><a href="confidentialite.html">Règles de confidentialité</a></p>
+</main>
+</body>
+</html>

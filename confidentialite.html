@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MaestrIA — Confidentialité</title>
+<!-- Page publique demandée par Google pour la connexion Google Tasks et Gmail (aucune donnée, aucun secret). -->
+<style>
+  :root {
+    --bg: #F5F6F8; --card: #FFFFFF; --text: #111827; --muted: #4B5563; --border: #E2E5EA;
+    --accent: #2F5BEA; --on-accent: #FFFFFF; --danger: #B91C1C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111318; --card: #1B1E25; --text: #F3F4F6; --muted: #A7ADB8; --border: #2C313B;
+            --accent: #5B7FFF; --on-accent: #0B1020; --danger: #F87171; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; padding: 16px;
+         background: var(--bg); color: var(--text); font: 16px/1.5 Inter, -apple-system, system-ui, sans-serif; }
+  main { width: 100%; max-width: 640px; margin: 24px auto; background: var(--card); border: 1px solid var(--border);
+         border-radius: 16px; padding: 28px 24px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p { margin: 8px 0; color: var(--muted); }
+  label { display: block; font-size: 14px; color: var(--muted); margin: 16px 0 6px; }
+  input { width: 100%; min-height: 44px; padding: 10px 12px; font: inherit; color: var(--text);
+          background: var(--bg); border: 1px solid var(--border); border-radius: 10px; }
+  button { min-height: 44px; padding: 10px 16px; font: inherit; font-weight: 600; border-radius: 10px;
+           border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  button:disabled { opacity: 0.5; cursor: default; }
+  .actions { display: flex; gap: 8px; margin-top: 20px; }
+  .actions button { flex: 1; }
+  ul { padding-left: 20px; color: var(--muted); }
+  .error { color: var(--danger); font-size: 14px; }
+  [hidden] { display: none !important; }
+  h2 { font-size: 17px; margin: 22px 0 4px; }
+  a { color: var(--accent); }
+  li { margin: 4px 0; }
+  .en { font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Règles de confidentialité</h1>
+  <p>MaestrIA est une application de tâches personnelle, utilisée uniquement par son auteur.</p>
+  <h2>Données lues</h2>
+  <ul>
+    <li>Google Tasks : les listes et les tâches (titre, date, notes, tâche terminée).</li>
+    <li>Gmail : uniquement les e-mails portant le libellé « À traiter » (objet, expéditeur, date et texte). Aucun autre e-mail n'est lu.</li>
+    <li>L'adresse e-mail du compte Google, pour afficher le compte relié.</li>
+  </ul>
+  <h2>Utilisation</h2>
+  <p>Ces données servent uniquement à créer et mettre à jour les tâches de l'auteur. Elles ne sont ni vendues, ni partagées, ni utilisées pour de la publicité, de l'analyse ou l'entraînement d'une intelligence artificielle.</p>
+  <h2>Stockage</h2>
+  <p>Les tâches sont conservées dans la base privée de l'auteur, chez Supabase, en Europe (Irlande), et sur ses propres appareils. Les jetons de connexion Google restent sur le serveur et ne sont jamais affichés.</p>
+  <h2>Retirer l'accès</h2>
+  <p>L'accès peut être retiré à tout moment : dans MaestrIA (Réglages &gt; Comptes connectés &gt; Déconnecter) ou dans les réglages du compte Google (Sécurité &gt; Applications tierces).</p>
+  <h2>Usage limité</h2>
+  <p class="en" lang="en">MaestrIA's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <p><a href="accueil.html">Accueil</a></p>
+</main>
+</body>
+</html>
